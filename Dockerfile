@@ -1,4 +1,4 @@
 FROM java:11
-EXPOSE 5050
-ADD target/MyDemoProject-1.jar MyDemoProject-1.jar
-ENTRYPOINT ["java","-jar","/MyDemoProject-1.jar"]
+EXPOSE 8080
+ADD target/jenkins-docker.jar jenkins-docker.jar
+ENTRYPOINT ["java","-jar","/jenkins-docker.jar"]
